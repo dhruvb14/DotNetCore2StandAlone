@@ -35,12 +35,30 @@ This POC was created so you could create an application which can be distributed
 
 # Build/Release Section
 **PC Standalone Release**
+
+*replace win10-x64 with win-x64 for Generic support for all W7+*
+
 - dotnet publish -c Release -r win10-x64
 - cd bin\Release\netcoreapp2.0\win10-x64\publish
 - run DotNetCore2StandAlone.exe
 
 **Mac Standalone Release**
+
+*replace osx.10.11-x64 with osx-x64 for Generic support for all OSX 10.12+*
+
 - dotnet publish -c Release -r osx.10.11-x64
 - cd bin/Release/netcoreapp2.0/osx.10.11-x64/publish
 - chmod a+x DotNetCore2StandAlone
 - ./DotNetCore2StandAlone  
+
+
+**Linux  Standalone Release *(Generic and Untested)***
+- dotnet publish -c Release -r linux-x64
+- cd bin/Release/netcoreapp2.0/linux-x64/publish
+- chmod a+x DotNetCore2StandAlone
+- ./DotNetCore2StandAlone  
+
+# Additional Build Targets
+If you want to support additional specific build targets check out the following link: 
+https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
+and add the build targets to the ./DotNetCore2StandAlone.csproj on Line 8
