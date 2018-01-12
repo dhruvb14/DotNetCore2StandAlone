@@ -62,3 +62,7 @@ This POC was created so you could create an application which can be distributed
 If you want to support additional specific build targets check out the following link: 
 https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
 and add the build targets to the ./DotNetCore2StandAlone.csproj on Line 8
+
+
+# Entity Framework With SQLLite
+If you look in the documents folder you will see that there is a postman collection which you can import and do Create's reads and updates to the sqllite database using simple rest commands in postman. Angular UI Pieces are not yet built for this yet.

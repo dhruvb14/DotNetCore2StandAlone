@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DotNetCore2StandAlone.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetCore2StandAlone.Controllers
@@ -24,6 +25,13 @@ namespace DotNetCore2StandAlone.Controllers
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             });
+        }
+
+        [HttpGet("[action]")]
+        public IEnumerable<Blog> Blog()
+        {
+            var rng = new BloggingContext();
+            return rng.Blogs;
         }
 
         public class WeatherForecast
