@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
 
 @Component({
     selector: 'home',
