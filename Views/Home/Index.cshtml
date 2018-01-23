@@ -4,6 +4,8 @@
 }
  @if (@hostingEnv.EnvironmentName == "Development")
   {
+    //   How to fix serverside prerendring bugs: selected answer works
+    //   https://stackoverflow.com/questions/43442770/prerendering-failed-because-of-error-referenceerror-event-is-not-defined-with
 <app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
 } else{
 <app>Loading...</app>
