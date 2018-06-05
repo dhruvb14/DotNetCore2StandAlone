@@ -1,3 +1,5 @@
+### 6/5/2018 - Since this was written a new default angular template has been released. I recommend cloning as the new template has not been tested with self contained executable implementation.
+
 # Standalone Dotnetcore MVC Angular SPA
 # Purpose
 This POC was created so you could create an application which can be distributed to end users using web technology and run by simply clicking a EXE and navigating to the local url. It will be updated with additional features down the road including sqllite database with EntityFramework as the ORM.
